@@ -1,6 +1,36 @@
 (function(window, _) {
     window.HellenKellersSecrets = window.HellenKellersSecrets || {
-      numz: {},
+      numz: {
+      /**
+       * 
+       * @param {Object} pointA - any game object on screen
+       * @param {Object} pointB - any game object on screen 
+       * @param {number} pointA.x - pointA's position relative to the left side of the screen
+       * @param {number} pointA.y - pointA's position relative to the top side of the screen
+       * @param {number} pointB.x - pointB's position relative to the left side of the screen
+       * @param {number} pointB.y - pointB's position relative to the top side of the screen
+       * @param {number} radians - angle measure in radian form
+       * @param {number} degrees - conversion of radian to angles
+       * @returns {number}
+       */
+      
+      getAngleDegrees(pointA, pointB){
+        const
+        distanceX = pointB.x - pointA.x,
+        distanceY = pointB.y - pointA.y,
+        radians = Math.atan2(distanceY, distanceX),
+        degrees = radians * 180 / Math.PI; 
+        return degrees;
+      },
+      
+      degreesToRadians(degrees){
+        return degrees * Math.PI / 180; 
+      },
+      radiansToDegrees(radians){
+        return radians * 180 / Math.PI;
+      }, 
+
+      },
       phyz: {
       /**
        * Returns an Object with basic properties utilized in a 
