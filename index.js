@@ -1,5 +1,5 @@
 (function(window, _) {
-    window.HellenKellersSecrets = window.HellenKellersSecrets || {
+    window.HelenKellersSecrets = window.HelenKellersSecrets || {
       numz: {
       /**
        * 
