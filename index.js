@@ -1,7 +1,7 @@
 (function(window, _) {
     window.HelenKellersSecrets = window.HelenKellersSecrets || {
       numz: {
-      /**
+      /***
        * 
        * @param {Object} pointA - any game object on screen
        * @param {Object} pointB - any game object on screen 
